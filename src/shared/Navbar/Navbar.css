@@ -1,0 +1,37 @@
+@media only screen and (min-width: 992px) {
+  .nav-custom {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.bg-custom {
+  background-color: black;
+  padding: 0;
+}
+.icon-custom {
+  background-color: white;
+  border-radius: 5px;
+}
+.navbar-brand-custom {
+  color: #18d26e;
+  font-size: 4rem;
+  font-family: "Lobster", cursive;
+}
+.navbar-brand-custom:hover {
+  color: #18d26e;
+}
+.nav-link {
+  color: white;
+  font-size: 1.1rem;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.spacial-nav-link {
+  border: 1px solid #18d26e;
+}
+.nav-link:hover {
+  background-color: #18d26e;
+  color: white;
+  border-radius: 10px;
+}
