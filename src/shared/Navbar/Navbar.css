@@ -8,6 +8,7 @@
 .bg-custom {
   background-color: black;
   padding: 0;
+  /* position: fixed; */
 }
 .icon-custom {
   background-color: white;

@@ -1,13 +1,17 @@
 import "./App.css";
 import { Fragment } from "react";
-import Typical from "react-typical";
 import Navbar from "./shared/Navbar/Navbar";
+import TitleBar from "./component/Home/TitleBar/TitleBar";
+import About from "./component/Home/About/About";
+import SkillAndTestimonial from "./component/Home/SkillAndTestimonial/SkillAndTestimonial";
 
 function App() {
   return (
     <Fragment className="App">
       <Navbar />
-      <Typical steps={["I am Md.Mohon", 2000]} loop={Infinity} wrapper="h1" />
+      <TitleBar />
+      <About />
+      <SkillAndTestimonial />
     </Fragment>
   );
 }

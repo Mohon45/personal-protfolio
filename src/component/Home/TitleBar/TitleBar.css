@@ -1,0 +1,15 @@
+.full-titlebar {
+  height: 90vh;
+}
+.big-Title {
+  padding-top: 15%;
+  color: white;
+}
+.big-Title h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.big-Title h2 {
+  color: #18d26e;
+  font-weight: bold;
+}

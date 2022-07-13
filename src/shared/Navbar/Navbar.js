@@ -21,7 +21,7 @@ const Navbar = () => {
             className="collapse navbar-collapse nav-custom"
             id="navbarSupportedContent"
           >
-            <a className="navbar-brand navbar-brand-custom" href="/">
+            <a className="navbar-brand navbar-brand-custom p-0" href="/">
               Mohon
             </a>
             <ul className="navbar-nav  mb-2 mb-lg-0">
