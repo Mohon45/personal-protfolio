@@ -1,10 +1,10 @@
 import React from "react";
-import CountUp from "react-countup";
+import Counter from "../../../Const/Counter/Counter";
 import "./About.css";
 
 const About = () => {
   return (
-    <div className="about">
+    <div id="about" className="about">
       <div className="container">
         <div className="about-section-title pt-4">
           <h6>ABOUT</h6>
@@ -95,36 +95,37 @@ const About = () => {
         <div className="row counter py-5">
           <div className="col-md-3">
             <div className="counter-item">
-              <i class="bi bi-emoji-smile-fill"></i>
+              <i className="bi bi-emoji-smile-fill"></i>
+
               <h1 className="mt-2">
-                <CountUp end={50} />
+                <Counter className="count" end={50} />
               </h1>
               <p>Happy Clients</p>
             </div>
           </div>
           <div className="col-md-3">
             <div className="counter-item">
-              <i class="bi bi-journal-richtext"></i>
+              <i className="bi bi-journal-richtext"></i>
               <h1 className="mt-2">
-                <CountUp end={15} />
+                <Counter className="count" end={15} />
               </h1>
               <p>Projects</p>
             </div>
           </div>
           <div className="col-md-3">
             <div className="counter-item">
-              <i class="bi bi-github"></i>
+              <i className="bi bi-github"></i>
               <h1 className="mt-2">
-                <CountUp end={65} />
+                <Counter className="count" end={65} />
               </h1>
               <p>Repository</p>
             </div>
           </div>
           <div className="col-md-3">
             <div className="counter-item">
-              <i class="bi bi-award"></i>
+              <i className="bi bi-award"></i>
               <h1 className="mt-2">
-                <CountUp end={5} />
+                <Counter className="count" end={5} />
               </h1>
               <p>Awards</p>
             </div>

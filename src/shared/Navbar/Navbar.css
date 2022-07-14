@@ -31,6 +31,9 @@
 .spacial-nav-link {
   border: 1px solid #18d26e;
 }
+.spacial-nav-link:focus {
+  color: white;
+}
 .nav-link:hover {
   background-color: #18d26e;
   color: white;
