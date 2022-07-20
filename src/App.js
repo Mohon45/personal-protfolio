@@ -1,5 +1,6 @@
 import "./App.css";
 import { Fragment } from "react";
+import AOS from "aos";
 import Navbar from "./shared/Navbar/Navbar";
 import TitleBar from "./component/Home/TitleBar/TitleBar";
 import About from "./component/Home/About/About";
@@ -9,6 +10,7 @@ import Contact from "./component/Home/Contact/Contact";
 import Footer from "./component/Home/Footer/Footer";
 
 function App() {
+  AOS.init();
   return (
     <Fragment className="App">
       <Navbar />

@@ -123,6 +123,67 @@ const SkillAndTestimonial = () => {
             </div>
           </div>
         </div>
+
+        {/* testimonials section start*/}
+
+        <div className="testimonials mt-4">
+          <div className="about-section-title pt-4">
+            <h6 className="m-0 p-0">TESTIMONIALS</h6>
+          </div>
+
+          <div className="row mt-5">
+            <div className="col-md-4">
+              <div className="testimonial-item text-white">
+                <p>
+                  <i class="fa-solid fa-quote-left quote"></i>&nbsp; Md.Mohon
+                  has completed a rigorous amountof javascript, HTML, CSS,
+                  React. Also completed three projects in React and performed
+                  among the top 5% of the class. We found Md. Mohon hard
+                  Working, dedicated and quick learner, who can finish the
+                  assigned task on time. &nbsp;
+                  <i class="fa-solid fa-quote-right quote"></i>
+                </p>
+                <img src="https://i.ibb.co/1L6vWwz/jhanker-mahbub.png" alt="" />
+                <h3>Jhanker Mahbub</h3>
+                <h4>CEO at Programming Hero</h4>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="testimonial-item text-white">
+                <p>
+                  <i class="fa-solid fa-quote-left quote"></i>&nbsp; Md.Mohon
+                  has completed a rigorous amountof javascript, HTML, CSS,
+                  React. Also completed three projects in React and performed
+                  among the top 5% of the class. We found Md. Mohon hard
+                  Working, dedicated and quick learner, who can finish the
+                  assigned task on time. &nbsp;
+                  <i class="fa-solid fa-quote-right quote"></i>
+                </p>
+                <img src="https://i.ibb.co/K5rZqKR/alom-vai.jpg" alt="" />
+                <h3>Jhanker Mahbub</h3>
+                <h4>CEO at Programming Hero</h4>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="testimonial-item text-white">
+                <p>
+                  <i class="fa-solid fa-quote-left quote"></i>&nbsp; Md.Mohon
+                  has completed a rigorous amountof javascript, HTML, CSS,
+                  React. Also completed three projects in React and performed
+                  among the top 5% of the class. We found Md. Mohon hard
+                  Working, dedicated and quick learner, who can finish the
+                  assigned task on time. &nbsp;
+                  <i class="fa-solid fa-quote-right quote"></i>
+                </p>
+                <img src="https://i.ibb.co/1L6vWwz/jhanker-mahbub.png" alt="" />
+                <h3>Jhanker Mahbub</h3>
+                <h4>CEO at Programming Hero</h4>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -13,3 +13,9 @@
   color: #18d26e;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+  .big-Title h1 {
+    font-size: 3rem;
+  }
+}
