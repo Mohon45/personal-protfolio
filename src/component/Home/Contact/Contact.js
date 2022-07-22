@@ -1,7 +1,40 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import { toast } from "react-toastify";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // clear from
+    setName("");
+    setEmail("");
+    setMessage("");
+
+    emailjs
+      .sendForm(
+        "service_qds1sbr",
+        "template_i0b4vxw",
+        form.current,
+        "user_2V7fKrmcWiAC13MEdXRqb"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Message Sent!");
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Something went wrong! Try to latter.");
+        }
+      );
+  };
   return (
     <div id="contact" className="about contact">
       <div className="container">
@@ -10,69 +43,69 @@ const Contact = () => {
           <h1>CONTACT ME</h1>
         </div>
 
-        <div class="row mt-2">
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bi bi-geo-alt"></i>
+        <div className="row mt-2">
+          <div className="col-md-6 d-flex align-items-stretch">
+            <div className="info-box">
+              <i className="bi bi-geo-alt"></i>
               <h3>My Address</h3>
               <p>Puthia, Rajshahi, Bangladesh</p>
             </div>
           </div>
 
-          <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bi bi-share"></i>
+          <div className="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+            <div className="info-box">
+              <i className="bi bi-share"></i>
               <h3>Social Profiles</h3>
-              <div class="social-links">
+              <div className="social-links">
                 <a
                   href="https://twitter.com/mohon_dev"
                   target="_blank"
-                  class="twitter"
+                  className="twitter"
                 >
-                  <i class="bi bi-twitter"></i>
+                  <i className="bi bi-twitter"></i>
                 </a>
                 <a
                   href="https://www.facebook.com/profile.php?id=100069159139897"
                   target="_blank"
-                  class="facebook"
+                  className="facebook"
                 >
-                  <i class="bi bi-facebook"></i>
+                  <i className="bi bi-facebook"></i>
                 </a>
                 <a
                   href="https://www.instagram.com/md_mohon6/"
                   target="_blank"
-                  class="instagram"
+                  className="instagram"
                 >
-                  <i class="bi bi-instagram"></i>
+                  <i className="bi bi-instagram"></i>
                 </a>
                 <a
                   href="https://github.com/Mohon45"
                   target="_blank"
-                  class="google-plus"
+                  className="google-plus"
                 >
-                  <i class="bi bi-github"></i>
+                  <i className="bi bi-github"></i>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/md-mohon-145a87216/"
                   target="_blank"
-                  class="linkedin"
+                  className="linkedin"
                 >
-                  <i class="bi bi-linkedin"></i>
+                  <i className="bi bi-linkedin"></i>
                 </a>
               </div>
             </div>
           </div>
 
-          <div class="col-md-6 mt-4 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bi bi-envelope"></i>
+          <div className="col-md-6 mt-4 d-flex align-items-stretch">
+            <div className="info-box">
+              <i className="bi bi-envelope"></i>
               <h3>Email Me</h3>
               <p>mdmohon6145@gmail.com</p>
             </div>
           </div>
-          <div class="col-md-6 mt-4 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bi bi-telephone"></i>
+          <div className="col-md-6 mt-4 d-flex align-items-stretch">
+            <div className="info-box">
+              <i className="bi bi-telephone"></i>
               <h3>Call Me</h3>
               <p>+8801782638193</p>
             </div>
@@ -80,60 +113,48 @@ const Contact = () => {
         </div>
 
         <form
-          action="forms/contact.php"
-          method="post"
+          ref={form}
+          onSubmit={sendEmail}
           role="form"
-          class="php-email-form mt-4"
+          className="php-email-form mt-4"
         >
-          <div class="row">
-            <div class="col-md-6 form-group">
+          <div className="row">
+            <div className="col-md-6 form-group">
               <input
                 type="text"
-                name="name"
-                class="form-control"
-                id="name"
-                placeholder="Your Name"
+                name="user_name"
+                className="form-control"
+                onChange={(event) => setName(event.target.value)}
+                value={name}
+                placeholder="Enter Your Name"
                 required
               />
             </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
+            <div className="col-md-6 form-group mt-3 mt-md-0">
               <input
                 type="email"
-                class="form-control"
-                name="email"
-                id="email"
-                placeholder="Your Email"
+                className="form-control"
+                name="user_email"
+                onChange={(event) => setEmail(event.target.value)}
+                value={email}
+                placeholder="Enter Your Email"
                 required
               />
             </div>
           </div>
-          <div class="form-group mt-3">
-            <input
-              type="text"
-              class="form-control"
-              name="subject"
-              id="subject"
-              placeholder="Subject"
-              required
-            />
-          </div>
-          <div class="form-group mt-3">
+          <div className="form-group mt-3">
             <textarea
-              class="form-control"
+              className="form-control"
               name="message"
+              onChange={(event) => setMessage(event.target.value)}
+              value={message}
               rows="5"
-              placeholder="Message"
+              placeholder="Your Message"
               required
             ></textarea>
           </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">
-              Your message has been sent. Thank you!
-            </div>
-          </div>
-          <div class="text-center">
+
+          <div className="text-center mt-3">
             <button type="submit">Send Message</button>
           </div>
         </form>

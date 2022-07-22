@@ -8,6 +8,7 @@ import SkillAndTestimonial from "./component/Home/SkillAndTestimonial/SkillAndTe
 import MyProjects from "./component/Home/MyProjects/MyProjects";
 import Contact from "./component/Home/Contact/Contact";
 import Footer from "./component/Home/Footer/Footer";
+import Notify from "./Const/Notify/Notify";
 
 function App() {
   AOS.init();
@@ -20,6 +21,7 @@ function App() {
       <MyProjects />
       <Contact />
       <Footer />
+      <Notify />
     </Fragment>
   );
 }
