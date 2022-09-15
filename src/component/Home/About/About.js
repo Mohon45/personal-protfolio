@@ -10,7 +10,7 @@ const About = () => {
           <h6>ABOUT</h6>
           <h1>LEARN MORE ABOUT ME</h1>
         </div>
-        <div className="row my-5">
+        <div className="row d-flex align-items-center my-5">
           <div className="col-md-4 about-left-side">
             <img
               src="https://i.ibb.co/qMLPRTh/Whats-App-Image-2022-05-12-at-10-27-41-PM.jpg"
@@ -33,7 +33,7 @@ const About = () => {
               interests include joining an exciting team of passionate people,
               personal growth, and making silly faces.
             </p>
-            <div className="row mt-5">
+            {/* <div className="row mt-5">
               <div className="col-md-6">
                 <p>
                   <span style={{ color: "#18d26e" }}>&#10095;</span> &nbsp;
@@ -58,7 +58,7 @@ const About = () => {
                 <p>
                   <span style={{ color: "#18d26e" }}>&#10095;</span> &nbsp;
                   <span style={{ fontWeight: "bold" }}>Degree:</span> &nbsp;
-                  Diploma In-Engineering(Raning)
+                  Diploma In-Engineering(Running)
                 </p>
               </div>
               <div className="col-md-6">
@@ -89,7 +89,7 @@ const About = () => {
                   Available
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="row counter py-5">
@@ -116,7 +116,7 @@ const About = () => {
             <div className="counter-item">
               <i className="bi bi-github"></i>
               <h1 className="mt-2">
-                <Counter className="count" end={65} />
+                <Counter className="count" end={80} />
               </h1>
               <p>Repository</p>
             </div>

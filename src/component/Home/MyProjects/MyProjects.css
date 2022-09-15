@@ -40,3 +40,6 @@
   text-decoration: none;
   color: #fff;
 }
+.source-code-hover:hover {
+  color: #18d26e;
+}
