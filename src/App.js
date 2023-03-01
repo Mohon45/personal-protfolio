@@ -9,6 +9,7 @@ import MyProjects from "./component/Home/MyProjects/MyProjects";
 import Contact from "./component/Home/Contact/Contact";
 import Footer from "./component/Home/Footer/Footer";
 import Notify from "./Const/Notify/Notify";
+import Experiences from "./component/Home/Experiences/Experiences";
 
 function App() {
   AOS.init();
@@ -18,6 +19,7 @@ function App() {
       <TitleBar />
       <About />
       <SkillAndTestimonial />
+      <Experiences />
       <MyProjects />
       <Contact />
       <Footer />

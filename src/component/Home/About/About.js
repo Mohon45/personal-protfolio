@@ -1,5 +1,6 @@
 import React from "react";
 import Counter from "../../../Const/Counter/Counter";
+import myImage from "../../../images/my-photo.jpg";
 import "./About.css";
 
 const About = () => {
@@ -12,10 +13,7 @@ const About = () => {
         </div>
         <div className="row d-flex align-items-center my-5">
           <div className="col-md-4 about-left-side">
-            <img
-              src="https://i.ibb.co/qMLPRTh/Whats-App-Image-2022-05-12-at-10-27-41-PM.jpg"
-              alt=""
-            />
+            <img src={myImage} alt="" />
           </div>
           <div className="col-md-8 px-5 about-right-side text-white">
             <h1>MERN-Stack & Frontend Developer</h1>
@@ -107,7 +105,7 @@ const About = () => {
             <div className="counter-item">
               <i className="bi bi-journal-richtext"></i>
               <h1 className="mt-2">
-                <Counter className="count" end={15} />
+                <Counter className="count" end={25} />
               </h1>
               <p>Projects</p>
             </div>
@@ -116,7 +114,7 @@ const About = () => {
             <div className="counter-item">
               <i className="bi bi-github"></i>
               <h1 className="mt-2">
-                <Counter className="count" end={80} />
+                <Counter className="count" end={100} />
               </h1>
               <p>Repository</p>
             </div>

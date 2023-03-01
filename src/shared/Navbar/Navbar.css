@@ -10,10 +10,6 @@
   padding: 0;
   /* position: fixed; */
 }
-.icon-custom {
-  background-color: white;
-  border-radius: 5px;
-}
 .navbar-brand-custom {
   color: #18d26e;
   font-size: 4rem;
@@ -29,7 +25,7 @@
   border-radius: 10px;
 }
 .spacial-nav-link {
-  border: 1px solid #18d26e;
+  outline: 2px solid #18d26e;
 }
 .spacial-nav-link:focus {
   color: white;

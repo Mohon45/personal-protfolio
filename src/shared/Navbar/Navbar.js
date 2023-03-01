@@ -15,7 +15,13 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon icon-custom"></span>
+            <span class="" role="button">
+              <i
+                className="fa fa-bars fa-2x my-3"
+                aria-hidden="true"
+                style={{ color: "#e6e6ff" }}
+              ></i>
+            </span>
           </button>
           <div
             className="collapse navbar-collapse nav-custom"
@@ -32,13 +38,13 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#about">
-                  About
+                  About Me
                 </a>
               </li>
 
               <li className="nav-item">
                 <a className="nav-link" href="#projects">
-                  My Project
+                  My Projects
                 </a>
               </li>
 
