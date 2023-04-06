@@ -10,14 +10,51 @@ const MyProjects = () => {
           <h1>MY PROJECTS</h1>
         </div>
 
-        <div className="row ">
-          <div className="col-md-4 mt-4">
-            <div className="our-team active">
-              <div className="pic">
+        <div className="row text-white mt-4">
+          <div className="col-md-6 mb-4">
+            <div className="single-project our-team">
+              <h1 className="">E-Tutors</h1>
+              <div className="single-project-img">
+                <img
+                  src="https://i.ibb.co/CzYhQSz/Screenshot-2023-04-06-023726.png"
+                  alt=""
+                />
+              </div>
+              <div className="content">
+                <span className="post">Learning Management Website</span>
+                <div className="d-flex justify-content-evenly social mt-3">
+                  <a
+                    href="https://github.com/Mohon45/learning-management-system-frontend"
+                    target="_blank"
+                    className="source-code-hover"
+                  >
+                    <div className="d-flex align-items-center">
+                      <i className="fa-brands fa-github fa-3x me-2"></i>
+                      <h4>Code</h4>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://e-tutors-ada6f.web.app/"
+                    target="_blank"
+                    className="source-code-hover"
+                  >
+                    <div className="d-flex align-items-center">
+                      <i className="fa-brands fa-chrome fa-3x me-2"></i>
+                      <h4>Live Site</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 mb-4">
+            <div className="single-project our-team">
+              <h1 className="">Cycle House</h1>
+              <div className="single-project-img">
                 <img src="https://i.ibb.co/bsXL1Yn/cycle-house.png" alt="" />
               </div>
               <div className="content">
-                <h2 className="title">The Cycle House</h2>
                 <span className="post">E-Commarce Website</span>
                 <div className="d-flex justify-content-evenly social mt-3">
                   <a
@@ -45,15 +82,46 @@ const MyProjects = () => {
               </div>
             </div>
           </div>
-
-          <div className="col-md-4 mt-4">
-            <div className="our-team">
-              <div className="pic">
-                <img src="https://i.ibb.co/bgTHYtg/vit.png" alt="" />
+          <div className="col-md-6 mb-4">
+            <div className="single-project our-team">
+              <h1 className="">BSMRAU</h1>
+              <div className="single-project-img">
+                <img src="https://i.ibb.co/wLPCzF5/bsmraus.png" alt="" />
               </div>
               <div className="content">
-                <h2 className="title">Varendra IT</h2>
-                <span className="post">Organization website</span>
+                <span className="post">
+                  বঙ্গবন্ধু শেখ মুজিবুর রহমান কৃষি বিশ্ববিদ্যালয়
+                </span>
+                <div className="d-flex justify-content-evenly social mt-3">
+                  <a href="#" className="source-code-hover">
+                    <div className="d-flex align-items-center">
+                      <i className="fa-brands fa-github fa-3x me-2"></i>
+                      <h4>Code</h4>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://convocation.bsmrau.edu.bd/"
+                    target="_blank"
+                    className="source-code-hover"
+                  >
+                    <div className="d-flex align-items-center">
+                      <i className="fa-brands fa-chrome fa-3x me-2"></i>
+                      <h4>Live Site</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 mb-4">
+            <div className="single-project our-team">
+              <h1 className="">Varendra IT</h1>
+              <div className="single-project-img">
+                <img src="https://i.ibb.co/6BCtB4w/vit.png" alt="" />
+              </div>
+              <div className="content">
+                <span className="post">Varendra IT is a Traning Center</span>
                 <div className="d-flex justify-content-evenly social mt-3">
                   <a
                     href="https://github.com/Mohon45/Varendra-IT-Polytechnic-Care"
@@ -68,149 +136,6 @@ const MyProjects = () => {
 
                   <a
                     href="https://www.varendrait.com/"
-                    target="_blank"
-                    className="source-code-hover"
-                  >
-                    <div className="d-flex align-items-center">
-                      <i className="fa-brands fa-chrome fa-3x me-2"></i>
-                      <h4>Live Site</h4>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4 mt-4">
-            <div className="our-team">
-              <div className="pic">
-                <img src="https://i.ibb.co/0GC3rWF/reunion.png" alt="" />
-              </div>
-              <div className="content">
-                <h2 className="title">ReUnion</h2>
-                <span className="post">Properties Rent Website</span>
-                <div className="d-flex justify-content-evenly social mt-3">
-                  <a
-                    href="https://github.com/Mohon45/reUnion-assesment"
-                    target="_blank"
-                    className="source-code-hover"
-                  >
-                    <div className="d-flex align-items-center">
-                      <i className="fa-brands fa-github fa-3x me-2"></i>
-                      <h4>Code</h4>
-                    </div>
-                  </a>
-
-                  <a
-                    href="https://dancing-rolypoly-d75bae.netlify.app"
-                    target="_blank"
-                    className="source-code-hover"
-                  >
-                    <div className="d-flex align-items-center">
-                      <i className="fa-brands fa-chrome fa-3x me-2"></i>
-                      <h4>Live Site</h4>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4 mt-4">
-            <div className="our-team">
-              <div className="pic">
-                <img src="https://i.ibb.co/3vrK5ws/honda-cbr.png" alt="" />
-              </div>
-              <div className="content">
-                <h2 className="title">Honda CBR</h2>
-                <span className="post">Honda Showroom Website</span>
-                <div className="d-flex justify-content-evenly social mt-3">
-                  <a
-                    href="https://github.com/Mohon45/Honda-Cbr"
-                    target="_blank"
-                    className="source-code-hover"
-                  >
-                    <div className="d-flex align-items-center">
-                      <i className="fa-brands fa-github fa-3x me-2"></i>
-                      <h4>Code</h4>
-                    </div>
-                  </a>
-
-                  <a
-                    href="https://mohon45.github.io/Honda-Cbr/"
-                    target="_blank"
-                    className="source-code-hover"
-                  >
-                    <div className="d-flex align-items-center">
-                      <i className="fa-brands fa-chrome fa-3x me-2"></i>
-                      <h4>Live Site</h4>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4 mt-4">
-            <div className="our-team">
-              <div className="pic">
-                <img
-                  src="https://i.ibb.co/NT9T7tk/rajshi-model-hospital.png"
-                  alt=""
-                />
-              </div>
-              <div className="content">
-                <h2 className="title">Rajshahi Model Hospital</h2>
-                <span className="post">Medical Website</span>
-                <div className="d-flex justify-content-evenly social mt-3">
-                  <a
-                    href="https://github.com/Mohon45/Rajshahi-Model-Hospital"
-                    target="_blank"
-                    className="source-code-hover"
-                  >
-                    <div className="d-flex align-items-center">
-                      <i className="fa-brands fa-github fa-3x me-2"></i>
-                      <h4>Code</h4>
-                    </div>
-                  </a>
-
-                  <a
-                    href="https://rajshahi-model-hospital.web.app/"
-                    target="_blank"
-                    className="source-code-hover"
-                  >
-                    <div className="d-flex align-items-center">
-                      <i className="fa-brands fa-chrome fa-3x me-2"></i>
-                      <h4>Live Site</h4>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-4 mt-4">
-            <div className="our-team">
-              <div className="pic">
-                <img src="https://i.ibb.co/Thm3ByB/bd-travels.png" alt="" />
-              </div>
-              <div className="content">
-                <h2 className="title">BD Travels</h2>
-                <span className="post">Traveling Agency Website</span>
-                <div className="d-flex justify-content-evenly social mt-3">
-                  <a
-                    href="https://github.com/Mohon45/Bd-Travel-Website-Client-Site"
-                    target="_blank"
-                    className="source-code-hover"
-                  >
-                    <div className="d-flex align-items-center">
-                      <i className="fa-brands fa-github fa-3x me-2"></i>
-                      <h4>Code</h4>
-                    </div>
-                  </a>
-
-                  <a
-                    href="https://bd-travel-2842d.web.app/"
                     target="_blank"
                     className="source-code-hover"
                   >

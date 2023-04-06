@@ -50,7 +50,7 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <a
-                  className="nav-link"
+                  className="nav-link nav-blog"
                   href="https://devmohon.hashnode.dev/"
                   target="_blank"
                 >
