@@ -65,7 +65,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <a
                   className="nav-link spacial-nav-link"
-                  href="/Md.Mohon Web Developer Resume.pdf"
+                  href="/MD_MOHON_MERN_STACK_DEVELOPER.pdf"
                   download
                 >
                   Download Resume
