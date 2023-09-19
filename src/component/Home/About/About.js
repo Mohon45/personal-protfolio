@@ -1,6 +1,6 @@
 import React from "react";
 import Counter from "../../../Const/Counter/Counter";
-import myImage from "../../../images/my-photo.jpg";
+import myImage from "../../../images/own-photo.jpg";
 import "./About.css";
 
 const About = () => {
@@ -114,7 +114,7 @@ const About = () => {
             <div className="counter-item">
               <i className="bi bi-github"></i>
               <h1 className="mt-2">
-                <Counter className="count" end={100} />
+                <Counter className="count" end={150} />
               </h1>
               <p>Repository</p>
             </div>

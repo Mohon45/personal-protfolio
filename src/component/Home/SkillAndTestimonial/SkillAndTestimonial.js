@@ -122,6 +122,48 @@ const SkillAndTestimonial = () => {
               <h3>Git</h3>
             </div>
           </div>
+          <div className="col-md-3 mt-4">
+            <div className="icon-box">
+              <img
+                className="skill-img-custom"
+                src="https://i.ibb.co/svhTpMb/typescript.png"
+                alt=""
+              />
+              <h3>TypeScript</h3>
+            </div>
+          </div>
+          <div className="col-md-3 mt-4">
+            <div className="icon-box">
+              <img
+                className="skill-img-custom"
+                style={{ width: "50px" }}
+                src="https://i.ibb.co/12N7qg4/nextjs-removebg-preview.png"
+                alt=""
+              />
+              <h3>Next JS</h3>
+            </div>
+          </div>
+          <div className="col-md-3 mt-4">
+            <div className="icon-box">
+              <img
+                className="skill-img-custom "
+                style={{ width: "50px" }}
+                src="https://i.ibb.co/Psyf1gg/postgresql.png"
+                alt=""
+              />
+              <h3>PostgreSQL</h3>
+            </div>
+          </div>
+          <div className="col-md-3 mt-4 ">
+            <div className="icon-box">
+              <img
+                className="skill-img-custom"
+                src="https://i.ibb.co/vhp2v68/prisma-logo.png"
+                alt=""
+              />
+              <h3>Prisma</h3>
+            </div>
+          </div>
         </div>
 
         {/* testimonials section start*/}
